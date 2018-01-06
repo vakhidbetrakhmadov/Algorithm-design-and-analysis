@@ -45,10 +45,10 @@ Your input will be a 2-dimensional Python list of integers(table) with size n x 
 
 Example:
 ```
-    #Courses 0 1 2
-inputTable = [ [5, 8, 7], # R.A. 0
-                      [8,12,7], #R.A.1
-                      [4,8, 5] ] #R.A.2
+      #Courses 0 1 2
+inputTable = [[5, 8, 7], # R.A. 0
+              [8,12,7],  # R.A.1
+              [4,8, 5]]  # R.A.2
 asst, time = findOptimalAssistantship(inputTable)
 print(asst)
 print(time)
