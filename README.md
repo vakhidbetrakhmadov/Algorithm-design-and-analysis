@@ -6,9 +6,9 @@ This repo contains my implementaions of some of the most famuous algorithms.
  Consider the problem of finding required time to finish Tower of Hanoi problem with optimal number of moves recursively. The time takes to move a disk is calculated as the weight of a disk (n) multiplied by the distance between the source and destination pegs (can be 1 or 2). For example, to move disk 2 from peg 1 to peg 3 takes 2*2=4 seconds. Design and implement a Python 3 function that simulates the gameplay by printing each move to console, and at last, prints the total elapsed time for moving each disk separately.
 
 Example output:
-
-#Input size is 3:
-#disk 1: SRC to DST
+```
+Input size is 3:
+disk 1: SRC to DST
 disk 2: SRC to AUX
 disk 1: DST to AUX
 disk 3: SRC to DST
@@ -18,7 +18,7 @@ disk 1: SRC to DST
 Elapsed time for disk 1: 6
 Elapsed time for disk 2: 4
 Elapsed time for disk 3: 6
-
+```
 --- findRottenWalnut ---
 
 Consider the problem of finding rotten walnut. You have n walnuts and the weights of all walnuts are equal except the rotten one which is lighter than the others. Your input will be a python list of positive integers which indicates the weight of all walnuts; for example: [1 1 1 1 1 0.5 1 1 1]. Your output (return value of function) will be the index of the rotten walnut. To find the rotten walnut, you will use a pair of scales. The Python function which compares two set of walnuts is:
