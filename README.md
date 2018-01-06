@@ -1,7 +1,7 @@
 
-# This repo contains my implementaions of some of the most famuous algorithms.
+### This repo contains my implementaions of some of the most famuous algorithms.
 
-# --- TOHtime: ---
+#### --- TOHtime: ---
 
  Consider the problem of finding required time to finish Tower of Hanoi problem with optimal number of moves recursively. The time takes to move a disk is calculated as the weight of a disk (n) multiplied by the distance between the source and destination pegs (can be 1 or 2). For example, to move disk 2 from peg 1 to peg 3 takes 2*2=4 seconds. Design and implement a Python 3 function that simulates the gameplay by printing each move to console, and at last, prints the total elapsed time for moving each disk separately.
 
@@ -19,7 +19,8 @@ Elapsed time for disk 1: 6
 Elapsed time for disk 2: 4
 Elapsed time for disk 3: 6
 ```
-## --- findRottenWalnut ---
+
+#### --- findRottenWalnut ---
 
 Consider the problem of finding rotten walnut. You have n walnuts and the weights of all walnuts are equal except the rotten one which is lighter than the others. Your input will be a python list of positive integers which indicates the weight of all walnuts; for example: [1 1 1 1 1 0.5 1 1 1]. Your output (return value of function) will be the index of the rotten walnut. To find the rotten walnut, you will use a pair of scales. The Python function which compares two set of walnuts is:
 You will assume that this function executes in constant time (O (1)).
@@ -36,7 +37,8 @@ def compareScales (leftScaleList, rightScaleList):
 Using this function, design a recursive algorithm that finds the index of rotten walnut
 faster than linear time(O(n)) in terms of asymptotic complexity.
 
---- assistantship ---
+
+#### --- assistantship ---
 
 You have become the head of computer engineering department. You want to assign assistantship of each course to a R.A. (Research Assistant). To do this, you must consider skills of each R.A., some are good at Algorithms while some others may be expert at Operating Systems. According to his/her skills, an assistant may do the assistantship of a course more easily than the other ones.
 Your input will be a 2-dimensional Python list of integers(table) with size n x r where n is number of courses and r is number of R.A.s (assume r >= n always). Inside the table, the element at table[i][j] has the meaning of assistant number i must spend table[i][j] hours for course j per week. Design and implement a brute force algorithm in Python 3 to find the optimal solution of minimizing the total time spent for course assistantship for the whole department. If number of courses (n) is less than the number of R.A.’s (r), unoccupied R.A.’s will do the other department tasks, each of which has a cost of 6 hours per week. Your function will return 2 things: first a 1-dimensional Python list of integers with size r, list[i] will hold the number of the course that R.A. i will be its assistant and -1 if it is doing another department stuff. The second return value is a single integer denoting the minimum total time spent per week.
@@ -54,7 +56,8 @@ Output:
 [1, 2, 0] #R.A. 0 is assigned to course 1 etc.
 19 # Minimum total time
 ```
---- labify ---
+
+#### --- labify ---
 
 The rector of Gebze Technical University believes that every department of the university should have access to a computer lab. Unfortunately, GTU was hit by a flood that destroyed all of its computer labs and obstructed its roads! As you are the greatest programmer of GTU, the rector wants your help to repair the roads and build some new computer labs efficiently.
 GTU has n departments numbered from 1 to n. The departments are connected by m bidirectional roads. Students of a department have access to a computer lab if:
@@ -73,7 +76,8 @@ mapOfGTU = {
 minCost = findMinimumCostToLabifyGTU(2,1,mapOfGTU)
 print(minCost) # Output will be 4
 ```
---- subarray_finder ---
+
+#### --- subarray_finder ---
 
 Your middle school math teacher has given you a list of positive and negative integers and wants from you to find the subarray that has minimum sum. For example, if the input is [1, -4, -7, 5, -13, 9, 23, -1], the subarray that gives the minimum sum is [-4, -7, 5, -13]. Design and implement a divide and conquer algorithm in Python 3 that returns the subarray with minimum sum. Explain your algorithm and do worst case analysis as a comment block at the beginning of your implementation file.
 
@@ -86,7 +90,8 @@ print(msa)
 print(sum(msa))
 #Output: -19
 ```
---- lcp ---
+
+#### --- lcp ---
 
 Your high school English teacher has given you a list of words (strings). Your mission is to find the longest common postfix of given words. Here is an example:
 ```
@@ -104,7 +109,8 @@ lcp = longest_common_postfix(inpStrings)
 print(lcp)
 #Output: ity
 ```
---- find_kth_book_1 ---
+
+#### --- find_kth_book_1 ---
 
 As you are a new computer engineering student, you want to have books for classes. You have friend that knows a friend that knows another friend who has n of the books you want, and he/she lent them to you in an alphabetically (a to z) sorted form. But you needed m more books and you bought them from a bookstore again in an alphabetically (a to z) sorted form. You don’t merge and sort them (m and n) alphabetically because the lent books must not be mixed with your own books. Assuming they are merged and sorted, you want to find the k th (starting from 1) book. Design and implement a decrease and conquer algorithm in Python 3 to accomplish this task in O (log n + log m) time (assume that comparing two strings is constant time). Explain your algorithm as a comment block at the beginning of your implementation file.
 
@@ -118,7 +124,8 @@ book = find_kth_book_1(m,n,6)
 print(book)
 #Output: systemsprogramming
 ```
---- quickSortsComp ---
+
+#### --- quickSortsComp ---
 
 In quicksort, both Lomuto’s and Hoare’s partition schemes can be used. Implement quick sort in Python 3 using both and compare the partition schemes. What are their advantages and disadvantages? Answer this question as a comment block at the
 beginning of your implementation file.
@@ -133,7 +140,8 @@ qsl = quickSortLomuto(arr)
 print(qsl)
 #Output: [4, 15, 16, 24, 42, 68, 75]
 ```
---- maximum_cost ---
+
+#### --- maximum_cost ---
 
 There are two unsigned integer lists X and Y with the same number of elements (N). The following relation exists among their ith elements:
 ```
@@ -163,7 +171,8 @@ cost = find_maximum_cost(Y)
 print(cost)
 #Output: 78
 ```
---- theft ---
+
+#### --- theft ---
 
 A large amount of money was given to you and to protect, you split and buried it in a land with n*m cells (dimension is n row m column). Each cell in the land contains a positive integer which is the number of Turkish liras buried. A thief has learned your secret and going to steal maximum amount of money before the cops arrive. Initially the thief is at first column but can be at any row. He can move only 1 cell right, right-up or right-down from a given cell. When the thief arrives a new cell, he steals the money.
 Design and implement a dynamic programming algorithm in Python 3 to find out maximum amount of money he can steal when he reaches to the end (last column). Explain your algorithm and do worst case analysis as a comment block at the beginning of your implementation file.
@@ -179,7 +188,8 @@ res = theft(amountOfMoneyInLand)
 print(res)
 #Output: 83
 ```
---- decentNumber ---
+
+#### --- decentNumber ---
 
 A Decent Number having N digits has the following properties:
 1. Its digits can only be 3's and/or 5's.
