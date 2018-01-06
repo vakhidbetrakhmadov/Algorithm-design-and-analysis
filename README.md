@@ -1,5 +1,8 @@
 
+This repo contains my implementaions of some of the most famuous algorithms.
+
 --- TOHtime: ---
+
  Consider the problem of finding required time to finish Tower of Hanoi problem with optimal number of moves recursively. The time takes to move a disk is calculated as the weight of a disk (n) multiplied by the distance between the source and destination pegs (can be 1 or 2). For example, to move disk 2 from peg 1 to peg 3 takes 2*2=4 seconds. Design and implement a Python 3 function that simulates the gameplay by printing each move to console, and at last, prints the total elapsed time for moving each disk separately.
 
 Example output:
