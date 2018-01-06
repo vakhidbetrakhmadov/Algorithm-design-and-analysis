@@ -7,8 +7,8 @@ This repo contains my implementaions of some of the most famuous algorithms.
 
 Example output:
 
-Input size is 3:
-disk 1: SRC to DST
+#Input size is 3:
+#disk 1: SRC to DST
 disk 2: SRC to AUX
 disk 1: DST to AUX
 disk 3: SRC to DST
