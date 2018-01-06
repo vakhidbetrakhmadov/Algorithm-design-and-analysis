@@ -8,7 +8,16 @@ This repo contains my implementaions of some of the most famuous algorithms.
 Example output:
 
 Input size is 3:
-disk 1: SRC to DST disk 2: SRC to AUX disk 1: DST to AUX disk 3: SRC to DST disk 1: AUX to SRC disk 2: AUX to DST disk 1: SRC to DST Elapsed time for disk 1: 6 Elapsed time for disk 2: 4 Elapsed time for disk 3: 6
+disk 1: SRC to DST 
+disk 2: SRC to AUX 
+disk 1: DST to AUX 
+disk 3: SRC to DST 
+disk 1: AUX to SRC 
+disk 2: AUX to DST 
+disk 1: SRC to DST 
+Elapsed time for disk 1: 6 
+Elapsed time for disk 2: 4 
+Elapsed time for disk 3: 6
 
 --- findRottenWalnut ---
 
