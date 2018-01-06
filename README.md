@@ -69,10 +69,10 @@ Cost of building a lab is 2 and repairing a road is 1. There are 3 departments a
 Example:
 ```
 mapOfGTU = {
-                        1 : set([2,3]),
-                        2 : set([1,3]),
-                        3 : set([1,2])
-                        } # graph is initialized as dictionary
+            1 : set([2,3]),
+            2 : set([1,3]),
+            3 : set([1,2])
+            } # graph is initialized as dictionary
 minCost = findMinimumCostToLabifyGTU(2,1,mapOfGTU)
 print(minCost) # Output will be 4
 ```
